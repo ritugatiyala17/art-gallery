@@ -39,23 +39,6 @@ export default function AuthInputs() {
           inputType="email"
           onChange={(event) => handleInputChange("email", event.target.value)}
         />
-        {/* <p>
-          <ControlsLabel
-            $invalid={emailNotValid}
-            // className={`label ${emailNotValid ? "invalid" : ""}`}
-          >
-            Email
-          </ControlsLabel>
-          <Input
-            type="email"
-            $invalid={emailNotValid}
-            // style={{
-            //   backgroundColor: emailNotValid ? "#fed2d2" : "#d1d5db",
-            // }}
-            // className={emailNotValid ? "invalid" : undefined}
-            onChange={(event) => handleInputChange("email", event.target.value)}
-          />
-        </p> */}
         <CustomInput
           invalid={passwordNotValid}
           label="Password"
@@ -64,22 +47,6 @@ export default function AuthInputs() {
             handleInputChange("password", event.target.value)
           }
         />
-        {/* <p>
-          <ControlsLabel
-            $invalid={passwordNotValid}
-            // className={`label ${emailNotValid ? "invalid" : ""}`}
-          >
-            Password
-          </ControlsLabel>
-          <Input
-            $invalid={passwordNotValid}
-            type="password"
-            // className={passwordNotValid ? "invalid" : undefined}
-            onChange={(event) =>
-              handleInputChange("password", event.target.value)
-            }
-          />
-        </p> */}
       </ControlsContainer>
       <div className="actions">
         <button type="button" className="text-button">
